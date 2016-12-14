@@ -3,14 +3,10 @@ version: 0.1.0
 
 platform:
   - target: ubuntu
-      version: 14.04
-      arch: i686
+    version: 14.04
+    arch: i686
 
 api: 0.6.0
-
-#install:
-
-#build:
 
 package:
   - build/cognitive_games.py
