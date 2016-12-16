@@ -591,6 +591,7 @@ class ReasoningCts(CognitiveExercise):
 class StoryTellingCts(ReasoningCts):
     def __init__(self, cog_test):
         ReasoningCts.__init__(self, cog_test)
+        self.askValidation = False
 
     def pronounce_questions(self):
         # 1) The first question asks the user if he is ready for initiating the
@@ -934,5 +935,6 @@ if __name__ == "__main__":
     except IndexError as e:
         testIndex = ""
 
-    cogExercise = ExerciseFactory.getExercise(testType, testSubtype)
+    cogExercise = ExerciseFactory.getExercise(testType, testSubtype,
+                                              testDiff, testIndex)
     cogExercise.run()
