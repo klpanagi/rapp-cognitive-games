@@ -9,3 +9,4 @@ api: 0.6.0
 
 package:
   - build/cognitive_games.py
+  - build/run.sh
