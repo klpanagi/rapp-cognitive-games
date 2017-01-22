@@ -1,14 +1,13 @@
-
 language: python
-version: 0.1.0
+version: 0.1.1
 
 platform:
-  - target: ubuntu
-    version: 14.04
-    arch: i686
+    - target: ubuntu
+      version: 14.04
+      arch: i686
 
 api: 0.6.0
 
 package:
-  - build/cognitive_games.py
-  - build/run.sh
+    - build/cognitive_games.py
+    - build/run.sh
