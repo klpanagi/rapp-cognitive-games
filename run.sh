@@ -1,3 +1,4 @@
 #!/bin/sh
+SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
 
-python cognitive_games.py
+python2 ${SCRIPT_DIR}/cognitive_games.py
